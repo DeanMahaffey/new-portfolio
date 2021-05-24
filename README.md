@@ -10,7 +10,7 @@ and build a website; it just doesn't happen overnight.
 Click the link to my portfolio <https://deanmahaffey.github.io/new-portfolio/>
 
 # portfolio v.2
-![version two](assets/images/newportfolio.png)
+![version two](assets/images/updatedport.png)
 
 # portfolio v.1
 ![version one](assets/images/screenshot.png)
