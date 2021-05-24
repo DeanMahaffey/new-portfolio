@@ -5,6 +5,10 @@ I build this portfolio with only HTML, CSS, and JavaScript to start showcasing s
 I learned that CSS is complicated, and sometimes it can be easy. I knew that it takes dedication to create 
 and build a website; it just doesn't happen overnight.
 
+# usage
+
+Click the link to my portfolio <https://deanmahaffey.github.io/new-portfolio/>
+
 # portfolio v.2
 ![version two](assets/images/newportfolio.png)
 

@@ -2,10 +2,10 @@
 
 /* Variables */
 :root {
-    --primary-color: rgb(47, 59, 228);
-    --secondary-black: #0d081a;
-    --secondary-gray: #48464b;
-    --body-bg: #c7d3fa;
+    --primary-color: #222629;
+    --secondary-black: #474b4f;
+    --secondary-gray: #6b6e70;
+    --body-bg: #91e41e;
 }
 
 
@@ -783,7 +783,7 @@ section {
     color: white;
 }
 
-#contact .left .contact-info ul li:hover .icon {
+#contact .left .contact-info ul li:hover ion-icon {
     color: white;
 }
 
@@ -900,7 +900,7 @@ section {
 /*footer style*/
 
 #footer {
-    background-color: #311580;
+    background-color: #2a068b;
     color: white;
     padding: 10rem 0 5rem 0;
 
