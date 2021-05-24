@@ -4,113 +4,273 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/620f14ff9d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Kelly Dean Mahaffey</title>
+    <title>Kelly Dean's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-
 <body>
-
-    <!--Makes the name Dean appear in differt font-->
-    <header id="backtotop">
-        <h1>Kelly <span id="dean">Dean</span> Mahaffey</h1>
-    </header>
-
-        <!--makes the links at the top of the page-->
-        <nav id="navlinks">
-            <a href="#aboutme">| About Me |</a>
-            <a href="#work">Work |</a>
-            <a href="#contact">Contact Me |</a>
-            <a href="#resume">Resume |</a>  
-        </nav>
-
-    <main>
-
-        <!--main photo and about me section-->
-        <div class="photoabout">
-             <aside id="firstaside">
-                 <img class="photo" src="./assets/images/kellydean.JPG" alt="Kelly Dean Mahaffey">
-             </aside>
-
-             <article id="aboutme">
-                 <h2>About Me</h2>
-                    <p>My name Kelly Dean Mahaffey and I am learning to become a full-stack website developer. Some of the skills I will be learning are HTML, CSS, JavaScript, Responsive Design, Git, API, MySQL, Express, User Authentication, and more. I have been in the healthcare field for the past 13 years, so I have a right eye for detail, problem-solving, and communication.</p>
-             </article>
-
+    <!--Scroll to Top Button-->
+        <div class="scroll-top">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+              </svg> 
         </div>
+    <!--End Scroll to Top Button-->
 
-        <div>
-            <!--work section with images of projects but right they have a place holder-->
-             <header class="work-header">
-                 <h2 id="work">Work</h2>
-             </header>
 
-             <article>
-
-                <!--place holders for my projects that are links that open in another tab-->
-                <section class="card-one">
-                    <header>Project One</header>
-                    <a href="https://github.com/DeanMahaffey/HM-1-code_refactor" target="_blank">
-                    <img class="one"  src="https://via.placeholder.com/300x300" alt="image placeholder"></a>
-                    <p>Project One Placeholder</p>
-
-                </section>
-                
-                <section class="card">
-                    <header>Project Two</header>
-                    <a href="https://github.com/DeanMahaffey/prework-about-me" target="_blank">
-                    <img class="project" src="https://via.placeholder.com/250" alt="image placeholder"></a>
-                    <p>Project Two Placeholder</p>
-                </section>
-
-                <section class="card">
-                    <header>Project Three</header>
-                    <a href="https://github.com/DeanMahaffey/class-1-2" target="_blank">
-                    <img class="project" src="https://via.placeholder.com/250" alt="image placeholder"></a>
-                    <p>Project Three Placeholder</p>
-                </section>
-
-                <section class="card">
-                    <header>Project Four</header>
-                    <a href="https://github.com/DeanMahaffey/portfolio" target="_blank">
-                    <img class="project" src="https://via.placeholder.com/250" alt="image placeholder"></a>
-                    <p>Project Four Placeholder</p>
-                </section>
-
-                
-            </article>
+    <!--Nav Section -->
+    <section id="navigation">
+        <div class="nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
         </div>
-        
-        <!--contact me section with links???-->
-        <section>
-             <h2 class="contact">Contact Me</h2>
-            
-                <a id="contact" href="mailto:kelly.mahaffey@icloud.com">Email <span id="line">|</span></a>
-                <a id="contact" href="https://github.com/DeanMahaffey" target="_blank">GitHub <span id="line">|</span></a>
-                <a id="contact" href="https://www.linkedin.com/in/dean-mahaffey/" target="_blank">LinkedIn <span id="line">|</span></a>
-                <a id="resume" href="https://drive.google.com/file/d/1J0JF4D01-bU-D425Ny3UV41-XLksBL7N/view?usp=sharing" target="_blank">Resume <span id="line">|</span></a>
+    </section>
+    <section id="nav-content">
+        <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+        </div>
+        <div class="wrapper">
+            <h2 class="section-heading" data-outline="Menu">Menu</h2>
+            <nav>
+                <ul>
+                    <li><a data-text="Home" href="#hero">Home</a></li>
+                    <li><a data-text="About" href="#about">About</a></li>
+                    <li><a data-text="Projects" href="#projects">Projects</a></li>
+                    <li><a data-text="Contact" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--end of nav secton-->
+    <!-- hero section -->
+    <section id="hero">
+        <div class="container">
+            <div class="left">
+                <p class="subheading">I'm KELLY DEAN</p>
+                <h2 class="heading">
+                    <div class="wrapper"><span>Pixels</span></div>
+                    <div class="wrapper"><span>with</span></div>
+                    <div class="wrapper"><span>purpose</span></div>
+                </h2>
+                <p class="desc">
+                    My name Kelly Dean Mahaffey and I am learning to become a full-stack website developer. Some of the skills I will be learning are HTML, CSS, JavaScript, Responsive Design, Git, API, MySQL, Express, User Authentication, and more. I have been in the healthcare field for the past 13 years, so I have a right eye for detail, problem-solving, and communication.</p>
+                <div class="buttons">
+                    <a href="#" class="primary-btn">See My Works</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./assets/images/kellydean.JPG" alt="Kelly Dean">
+            </div>
+        </div>
+    </section>
+    <!-- End hero section -->
 
-        </section>
-            
+    <!-- Services section -->
 
- </main>
-    <!--footer with icon with links to social media and email.-->
-    <footer>
-        <h3>Stay Connected</h3>
+    <section id="services">
+        <div class="container">
+            <h2 class="section-heading" data-outline="Services">Services</h2>
+            <div class="all-items">
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">Web Design</h3>
+                    <p class="item-desc" >
+                        
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">MySQL and Mongodb</h3>
+                    <p class="item-desc" >
+                        
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">NODEJS</h3>
+                    <p class="item-desc" >
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- End Services section -->
 
-        <!--icons in the footer-->
-        <a class="email" href="mailto:kelly.mahaffey@icloud.com" ><i class="fas fa-envelope-square"></i></a>
-        <a class="github" href="https://github.com/DeanMahaffey" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a class="LinkedIn" href="https://www.linkedin.com/in/dean-mahaffey/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!--About Section-->
 
-        <!--back to top hyperlink-->
-        <a class="top" href="#backtotop">Back to Top</a>
+    <section id="about">
+        <div class="container">
+          <h2 class="section-heading" data-outline="about">About</h2>
+          <div class="wrapper">
+            <div class="left">
+              <div class="card">
+                <div class="img">
+                  <img src="./assets/images/kellydean.JPG" alt="Kelly Dean">
+                </div>
+                <p class="card-desc">
+                    I'm a Freelance Front-End Developer in Bellevue, WA. I have a passion for UI effects and creating intuitive, dynamic user experiences.</p>
+                <h3 class="card-name">Kelly Dean Mahaffey</h3>
+                <p class="card-sub-title">Freelance Front-End Developer</p>
+              </div>
+            </div>
+            <div class="right">
+              <p class="subheading">Hi! Let's Collab....</p>
+              <h2 class="slogan">Freelance Front-End Developer and Lab Assistant</h2>
+              <p class="right-text">
+                  If you are starting a business or stuck in the middle and looking for a creativce Web Designer to develop your website, you are at the right place at the right time.
+                  Click the Hire Me button and I will help you out!
+              </p>
+              <div class="buttons">
+                <a href="https://drive.google.com/file/d/1J0JF4D01-bU-D425Ny3UV41-XLksBL7N/view?usp=sharing" target="_blank" class="primary-btn" download="">Download Resume</a>
+                <a href="./contact.html" class="primary-btn outline">Hire Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </footer>
+    <!--End of About section -->
+
+    <!-- Project section -->
+      
+     <section id="projects">
+         <div class="container">
+             <h2 class="section-heading" data-outline="Projects">Projects</h2>
+             <div class="all-items">
+                 <div class="item">
+                     <div class="left">
+                         <div class="img">
+                            <img src="./assets/images/project.PNG" alt="Worth-A-Shot Project"> 
+                         </div>
+                     </div>
+                     <div class="right">
+                         <h2 class="project-title">Worth-A-Shot</h2>
+                         <h3 class="project-sub-title">Drinks</h3>
+                         <p class="project-desc">Project one was a group project during my bootcamp days.This app should ease the stress of any user who has a hard time coming up with fun alcoholic drinks for any party.</p>
+                         <div class="buttons">
+                             <a href="https://github.com/DeanMahaffey/Group_Project_1" class="primary-btn" target="_blank">Know more</a>
+                             <a href="https://deanmahaffey.github.io/Group_Project_1/" class="primary-btn outline external-link" target="_blank"><span>Preview</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                    <div class="left">
+                        <div class="img">
+                           <img src="./assets/images/project.PNG" alt="Worth-A-Shot Project"> 
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Worth-A-Shot</h2>
+                        <h3 class="project-sub-title">Drinks</h3>
+                        <p class="project-desc">project one</p>
+                        <div class="buttons">
+                            <a href="#" class="primary-btn">Know more</a>
+                            <a href="#" class="primary-btn outline external-link"><span>Preview</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                 </svg>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                           <img src="./assets/images/ScreenShotpassword.png" alt="Worth-A-Shot Project"> 
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Password Generator</h2>
+                        <h3 class="project-sub-title">Need a Password?</h3>
+                        <p class="project-desc">This project is a password generator; it is a useful tool to generate a strong password to your liking. This project was built because I was tired of coming up with my passwords. This project will help you develop a password that will include Uppercase, Lowercase, Numbers, and Symbols that can be 8-128 characters long. </p>
+                        <div class="buttons">
+                            <a href="https://github.com/DeanMahaffey/password-generator-HM" class="primary-btn" target="_blank">Know more</a>
+                            <a href="https://deanmahaffey.github.io/password-generator-HM/" class="primary-btn outline external-link" target="_blank"><span>Preview</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                 </svg>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </section> 
+
+    <!-- End of Project Section-->
+
+    <!-- Footer Section-->
+     <section id="footer">
+         <div class="container">
+             <footer>
+                 <div class="col-1">
+                     <div class="logo">
+                         <a href="#">
+                             <!--TODO make a logo-->
+                             <img src="" alt="Logo">
+                         </a>
+                     </div>
+                     <p>
+                         Freelance Front-End Developer.
+                     </p>
+                 </div>
+                 <div class="col-2">
+                     <h2 class="column-heading">Important<br>Links</h2> 
+                     <ul>
+                         <li><a href="#hero">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="./contact.html">Contact</a></li>
+                         <li><a href="#projects">Projects</a></li>
+                     </ul>
+                 </div>
+                 <div class="col-3">
+                    <h2 class="column-heading">Contact<br>Info</h2> 
+                    <ul>
+                        <li><a href="mailto:dean.mahaffey@outlook.com">dean.mahaffey@outlook.com</a></li>
+                        <li><a href="#">Bellevue, Washington</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h2 class="column-heading">Social<br>Links</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/dean-mahaffey/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="https://github.com/DeanMahaffey" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                    </ul>
+                </div>
+             </footer>
+         </div>
+     </section>
+
+     
+    <!-- End of Footer Section-->
+<script src="./assets/JS/main.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -106,6 +106,32 @@ section {
    z-index: -1;
 }
 
+/* scroll to top button style*/
+
+.scroll-top {
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    /*display: flex;*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(71, 40, 182, 0.226);
+    transform: 0.3s ease ease-in-out transform;
+}
+
+.scroll-top svg {
+    width: 50%;
+    color: black;
+    pointer-events: none;
+}
+
 /*Nav Style*/
 #navigation {
     position: fixed;
@@ -757,7 +783,119 @@ section {
     color: white;
 }
 
+#contact .left .contact-info ul li:hover .icon {
+    color: white;
+}
 
+#contact .left .contact-info ul li a .icon {
+    width: 25px;
+    color: var(--primary-color);
+}
+
+#contact .left .social-info ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 4rem;
+    gap: 2rem;
+}
+
+#contact .left .social-info ul li a {
+    color: var(--primary-color);
+}
+
+#contact .right .form-wrapper {
+    background-color: var(--primary-color);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 12px;
+    color: white;
+}
+
+#contact .right .form-group {
+    margin-bottom: 1rem;
+}
+
+#contact .right .form-group label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+#contact .right .form-group .input-wrapper {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#contact .right .form-group .input-wrapper .icon {
+    font-size: 2rem;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 218, 218);
+}
+
+#contact .right .form-group .input-wrapper input {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+
+#contact .right .form-group textarea {
+    width: 100%;
+    height: 250px;
+    resize: vertical;
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+#contact .right .form-wrapper button {
+    display: inline-block;
+    width: 150px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: auto;
+    padding: 1rem 0;
+    font-family: 'Roboto Mono';
+    letter-spacing: 0.3rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact .wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .right {
+        width: 100%;
+    }
+
+    #contact .right .form-wrapper {
+        padding: 3rem;
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 /*footer style*/
 
